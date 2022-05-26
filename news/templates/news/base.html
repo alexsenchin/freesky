@@ -5,10 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'news/css/main.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'news/css/style.css' %}" >
+    
     <title>  Чисте небо | {% block title %} {% endblock %}</title>
 </head>
 
-<h1>Base template</h1>
+
+<header class="header">
+    <a href="#">
+      <img class="logo" alt="Freesky logo" src="" />
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav-list">
+        <li><a class="main-nav-link nav-cta" href="{% url 'news' %}">Новини</a></li>
+        <li><a class="main-nav-link nav-cta" href="{% url 'projects' %}">Проекты</a></li>
+        <li><a class="main-nav-link nav-cta" href="{% url 'donations' %}">Сбор денег</a></li>
+        <li><a class="main-nav-link nav-cta" href="{% url 'contacts' %}">Контакты</a></li>
+        
+      </ul>
+    </nav>
+</header>
+
+
 {% block content %}
 {% endblock %}
