@@ -3,12 +3,19 @@
 
 
 {% block content %}
-<h1>News</h1>
 
+<div class="container grid grid--2-cols news">
 
 {% for news in all_news %}
+
+<div>
 <h2>{{ news.title }}</h2>
+
+
 <p>{{ news.intro }}</p>
+</div>
 
 {% endfor %} 
+
+</div>
 {% endblock %}

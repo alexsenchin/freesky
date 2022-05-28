@@ -3,10 +3,13 @@
 
 
 {% block content %}
-<h1>Donations</h1>
+
 
 {% for donations in all_donations %}
+<div class="container">
 <h2> {{ donations.title }} </h2>
+<p> {{donations.collected_amount}} / {{donations.required_amount}} UAH</p>
+</div>
 {% endfor %}
 
 {% endblock %}
