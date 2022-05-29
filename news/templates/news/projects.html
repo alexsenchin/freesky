@@ -5,7 +5,8 @@
 {% block content %}
     <div class="container grid grid--2-cols">
         {% for project in all_projects %}
-
+            {{ project.title }}
+            {{ project.body }}
         {% endfor %}
     </div>
 {% endblock %}

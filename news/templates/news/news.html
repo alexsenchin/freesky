@@ -8,11 +8,12 @@
 
 {% for news in all_news %}
 
-<div>
-<h2>{{ news.title }}</h2>
+<div class="news--block">
+<h2 class="news--header">{{ news.title }}</h2>
 
 
-<p>{{ news.intro }}</p>
+<p class="news--intro">{{ news.intro }}</p>
+<button class="btn" href="{{ news.slug }}"><p>Детальнее</p> </button> 
 </div>
 
 {% endfor %} 
