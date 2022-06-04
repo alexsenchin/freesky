@@ -8,7 +8,9 @@
 <div class="news news--block">
     <h1 class="news--header">{{ news.title }}</h1>
     {% video news.video '860x580' %}
-    
+    <figure class="image">
+        <img src="{{ news.image.url }}">
+    </figure>
     <p class="news--intro">{{ news.body }}</p>
     
 </div>

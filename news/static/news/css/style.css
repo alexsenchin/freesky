@@ -69,6 +69,7 @@ body {
 }
 
 
+
 /**************************/
 /* HEADER */
 /**************************/
@@ -138,13 +139,17 @@ body {
 
 .news {
     padding: 1.2rem 2.4rem;
-    
+    font-size: 1.8rem;
 }
 .news--header {
     padding: 1.2rem 2.4rem;
 }
 .news--intro {
     padding: 1.2rem 2.4rem;
+}
+.news--link {
+    text-decoration: none;
+    color: #555;
 }
 
 
