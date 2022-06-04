@@ -8,11 +8,23 @@
 {% for donations in all_donations %}
     
     <div class="container">
-        <h2> {{ donations.title }} </h2>
-        <div class="progress">
-            <div class="progress-bar" style="width: " role="progressbar" aria-valuenow="{{donations.collected_amount}}" aria-valuemin="0" aria-valuemax={{donations.required_amount}}></div>
+        <div class="donation--block grid grid--2-cols">
+            <div class="donation--image">
+                <figure class="image">
+                    <img class="donations--detail_image" src="{{ donations.image.url }}">
+                </figure>
+            </div>
+            <div class="donation--description">
+                <h2 class="donation--h2"> {{ donations.title }} </h2>
+                <p class="donation--paragraph"> Коштiв зiбрано: </p>
+                <p class="donation--collected"> {{donations.collected_amount}} / {{donations.required_amount}} UAH</p>
+                <p class="donation--body"> {{donations.body}} </p>
+            </div>
+
+        
+        
+        
         </div>
-        <p> {{donations.collected_amount}} / {{donations.required_amount}} UAH</p>
     </div>
 
 {% endfor %}

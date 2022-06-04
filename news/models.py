@@ -42,6 +42,7 @@ class Donation(models.Model):
     required_amount = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to='uploads/', blank=True, null=True)
+    body = models.TextField()
     
     
 

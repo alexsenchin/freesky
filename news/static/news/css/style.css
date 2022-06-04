@@ -206,14 +206,29 @@ body {
 /**************************/
 /* DONATIONS */
 /**************************/
-.progress {
-    height: 10rem;
-    border: 1px solid #04668C;
+.donation--image {
+    width: 100%;
+}
+.donations--detail_image {
+    width: 50rem;
 }
 
-.progress-bar {
-    border: 1px solid;
-    
+.donation--h2 {
+    font-size: 5rem;
+    color: black;
+}
+.donation--paragraph {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    color: #000;
+}
+.donation--collected {
+    font-size: 2.6rem;
+    color: #2D4859;
+}
+.donation--body {
+    font-size: 1.8rem;
+    color: #000;
 }
 
 
