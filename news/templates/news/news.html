@@ -9,11 +9,9 @@
 {% for news in all_news %}
 
 <div class="news--block">
-<h2 class="news--header">{{ news.title }}</h2>
-
-
-<p class="news--intro">{{ news.intro }}</p>
-<button class="btn" href="{{ news.slug }}"><p>Детальнее</p> </button> 
+    <h2 class="news--header">{{ news.title }}</h2>
+    <p class="news--intro">{{ news.intro }}</p>
+    
 </div>
 
 {% endfor %} 

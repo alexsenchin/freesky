@@ -86,6 +86,7 @@ body {
 /* NAVIGATION */
 /**************************/
 
+
 .main-nav-list {
     list-style: none;
     display: flex;
@@ -121,6 +122,16 @@ body {
     color: #04668C;
 }
   
+.blue-line {
+    width: 100%;
+    height: 9rem;
+    background-color: #04668C;
+    color: #fdf2e9;
+}
+.blue-line-h2 {
+    font-size: 5rem;
+    padding: 1rem 0;
+}
 /**************************/
 /* NEWS */
 /**************************/
@@ -155,3 +166,20 @@ body {
     border-radius: 9px;
     color: #2D4859;
 }
+
+
+/**************************/
+/* DONATIONS */
+/**************************/
+.progress {
+    height: 10rem;
+    border: 1px solid #04668C;
+}
+
+.progress-bar {
+    border: 1px solid;
+    
+}
+
+
+  
