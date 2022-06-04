@@ -7,16 +7,17 @@
 <div class="container grid grid--2-cols news">
 
 {% for news in all_news %}
-
+<a class="news--link" href="{% url 'news_detail' news.slug %}">
 <div class="news--block">
     <figure class="image">
         <img class="news--image" src="{{ news.image.url }}">
     </figure>
-    <a class="news--link" href="{% url 'news_detail' news.slug %}">
+    
     <h2 class="news--header">{{ news.title }}</h2>
     <p class="news--intro">{{ news.intro }}</p>
-    </a>
+    
 </div>
+</a>
 
 {% endfor %} 
 

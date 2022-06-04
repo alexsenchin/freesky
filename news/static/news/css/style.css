@@ -24,7 +24,7 @@ body {
     font-family: "DejaVu Sans Mono", monospace;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: black;
 }
 
 /**************************/
@@ -138,11 +138,21 @@ body {
 /**************************/
 .news--block {
     margin-top: 5rem;
+    color: black;
 }
 .news {
     padding: 1.2rem 2.4rem;
     font-size: 1.8rem;
+    color: black;
 }
+.news--link {
+    text-decoration: none;
+}
+.news--link:hover h2,
+.news--link:active h2 {
+    color: #2D4859;
+}
+
 .news--image {
     width: 50rem;
     height: 100%;
@@ -155,17 +165,43 @@ body {
 }
 .news--header {
     padding: 1.2rem 2.4rem;
+    color: black;
 }
+
 .news--intro {
     padding: 1.2rem 2.4rem;
+    color: black;
 }
-.news--link {
-    text-decoration: none;
-    color: #555;
-}
+
 .news--video {
     padding-left: 3rem;
 }
+
+/**************************/
+/* PROJECTS */
+/**************************/
+
+.project--detail_image {
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+}
+.projects--description {
+    margin-top: 4rem;
+    border-bottom: 2px solid black;
+}
+.project--header {
+    font-size: 5rem;
+}
+.project--paragraph {
+    font-size: 1.8rem;
+}
+.empty--space {
+    height: 10rem;
+    width: 100%;
+}
+
+
 
 /**************************/
 /* DONATIONS */
