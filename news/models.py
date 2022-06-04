@@ -9,7 +9,6 @@ class News(models.Model):
     slug = models.SlugField()
     intro = models.TextField()
     body = models.TextField()
-    #video = models.URLField(null=True, blank=True)
     video = EmbedVideoField()
     created_at = models.DateTimeField(auto_now_add=True)
 
