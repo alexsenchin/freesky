@@ -1,0 +1,14 @@
+{% extends 'news/base.html' %} 
+{% load static %} 
+
+
+{% block content %}
+
+<div class="news--block">
+    
+    <h2 class="news--header">{{ news.title }}</h2>
+    <p class="news--intro">{{ news.body }}</p>
+    
+</div>
+
+{% endblock %}

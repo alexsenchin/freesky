@@ -1,12 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from requests import request
 from . import models
+from .models import News
 
 
 def news(request):
     all_news = models.News.objects.all()
     context = {'all_news': all_news}
     return render(request, 'news/news.html', context=context)
+
+def news_detail(request, slug):
+    news = get_object_or_404(News, slug=slug)
+    return render(request, 'news/news_detail.html', {'news': news})
 
 def donations(request):
     all_donations = models.Donation.objects.all()

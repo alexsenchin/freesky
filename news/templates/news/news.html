@@ -9,9 +9,10 @@
 {% for news in all_news %}
 
 <div class="news--block">
+    <a href="{% url 'news_detail' news.slug %}">
     <h2 class="news--header">{{ news.title }}</h2>
     <p class="news--intro">{{ news.intro }}</p>
-    
+    </a>
 </div>
 
 {% endfor %} 
