@@ -136,10 +136,22 @@ body {
 /**************************/
 /* NEWS */
 /**************************/
-
+.news--block {
+    margin-top: 5rem;
+}
 .news {
     padding: 1.2rem 2.4rem;
     font-size: 1.8rem;
+}
+.news--image {
+    width: 50rem;
+    height: 100%;
+    padding-left: 2rem;
+}
+.news--detail_image {
+    width: 800px;
+    height: 450px;
+    padding-left: 3rem;
 }
 .news--header {
     padding: 1.2rem 2.4rem;
@@ -151,7 +163,9 @@ body {
     text-decoration: none;
     color: #555;
 }
-
+.news--video {
+    padding-left: 3rem;
+}
 
 /**************************/
 /* DONATIONS */
