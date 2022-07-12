@@ -4,8 +4,8 @@ from . import models
 from .models import News
 
 
-def main(reques):
-    return render(reques, 'news/main.html')
+def main(request):
+    return render(request, 'news/main.html')
 
 def news(request):
     all_news = models.News.objects.all()

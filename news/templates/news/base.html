@@ -13,9 +13,11 @@
 
 
 <header class="header">
-    <a href="#">
-      <img class="logo" alt="Freesky logo" src="" />
+  
+    <a href="{% url 'contacts' %}">
+      <img class="logo" alt="Freesky logo" src="{% static 'news/img/logo.jpg' %}" />
     </a>
+  
     <nav class="main-nav">
       <ul class="main-nav-list">
         <li><a class="main-nav-link nav-cta" href="{% url 'main' %}">Головна</a></li>
@@ -27,12 +29,21 @@
       </ul>
     </nav>
 </header>
+
 <div class='blue-line'>
   <div class="container">
-    <h2 class='blue-line-h2'>ВОЛЬНЕ НЕБО</h2>
+    <h2 class='blue-line-h2'></h2>
   </div>
 </div>
 
 
 {% block content %}
 {% endblock %}
+
+<footer class='footer'>
+  <div class='container'>
+    <div class='copyright'>
+  <p>© 2022 Copyright. All rights reserved</p>
+    </div>
+  </div>
+</footer>

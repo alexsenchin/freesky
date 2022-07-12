@@ -4,6 +4,7 @@ from embed_video.fields import EmbedVideoField
 
 
 
+
 class News(models.Model):
     
     title = models.CharField(max_length=255)
