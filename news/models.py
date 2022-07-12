@@ -17,6 +17,8 @@ class News(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+        verbose_name = 'Новость'
+        verbose_name_plural = 'Новости'
 
     def __str__(self):
         return self.title
@@ -31,6 +33,8 @@ class Projects(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+        verbose_name = 'Проект'
+        verbose_name_plural = 'Проекты'
 
     def __str__(self):
         return self.title
@@ -49,6 +53,8 @@ class Donation(models.Model):
 
     class Meta:
         ordering = ('-created_at',)
+        verbose_name = 'Сбор'
+        verbose_name_plural = 'Сборы'
 
     def __str__(self):
         return self.title
