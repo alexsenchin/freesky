@@ -3,6 +3,11 @@ from django.db import models
 from embed_video.fields import EmbedVideoField
 
 
+class MainActivity(models.Model):
+    body = models.TextField()
+
+class MainCarousel(models.Model):
+    image = models.ImageField(upload_to='uploads/', blank=True, null=True)
 
 
 class News(models.Model):

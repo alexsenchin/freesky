@@ -1,11 +1,15 @@
 from django.shortcuts import render, get_object_or_404
 from requests import request
 from . import models
-from .models import News
+from .models import News, MainCarousel, MainActivity
 
 
 def main(request):
-    return render(request, 'news/main.html')
+    all_mainactivity = models.MainActivity.objects.all()
+    all_maincarousel = models.MainCarousel.objects.all()
+    context = {'all_maincarousel': all_maincarousel, 
+    'all_mainactivity': all_mainactivity}
+    return render(request, 'news/main.html', context=context)
 
 def news(request):
     all_news = models.News.objects.all()

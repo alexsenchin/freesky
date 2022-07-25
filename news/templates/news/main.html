@@ -3,7 +3,25 @@
 
 
 {% block content %}
-<div class="container">
-    <h1>Main page</h1>
+<div class="container ">
+    <h1 class="news--header">Наша діяльність</h1>
+    {% for mainactivity in all_mainactivity %}
+    <p class="news">{{ mainactivity.body }}</p>
+    {% endfor %}
+    
+    <div class="carousel grid grid--2-cols">
+            {% for maincarousel in all_maincarousel %}
+            
+                <figure class="carousel--image">
+                    <img class="carousel--img" src="{{ maincarousel.image.url }}" alt="Volne nebo">
+                </figure>
+            
+            {% endfor %}
+        </div>
+            
+        
+            
+          
+        
 </div>
 {% endblock %}
