@@ -149,6 +149,13 @@ body {
     width: auto;
 }
 
+.carousel-inner {
+    height: 100%;
+    margin-bottom: 10rem;
+}
+.carousel-item {
+    height: 100%;
+}
 /**************************/
 /* FOOTER */
 /**************************/
