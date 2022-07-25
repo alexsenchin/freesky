@@ -31,4 +31,8 @@ def projects(request):
     return render(request, 'news/projects.html', context=context)
 
 def contacts(request):
-    return render(request, 'news/contact.html')
+    all_paymentdetails = models.PaymentDetails.objects.all()
+    all_contacts = models.Contacts.objects.all()
+    context = {'all_paymentdetails': all_paymentdetails, 
+    'all_contacts': all_contacts}
+    return render(request, 'news/contact.html', context=context)

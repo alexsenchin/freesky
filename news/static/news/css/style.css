@@ -246,6 +246,10 @@ body {
 /**************************/
 /* DONATIONS */
 /**************************/
+.donation--block {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 .donation--image {
     width: 100%;
 }
@@ -271,5 +275,17 @@ body {
     color: #000;
 }
 
-
-  
+.border {
+    height: 5rem;
+    width: 100%;
+    border-bottom: 1px black solid;
+}
+.contact-desc {
+    
+    border-bottom: 1px black solid;
+}
+.cont {
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}

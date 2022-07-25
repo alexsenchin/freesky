@@ -3,7 +3,32 @@
 
 
 {% block content %}
-<div class="container">
-    <h1>Contact page</h1>
+<h1 class="news--header cont">Реквізити</h1>
+<div class="container grid grid--2-cols">
+    {% for paymentdetails in all_paymentdetails %}
+    <div class="contact-desc">
+    <p class="news">{{ paymentdetails.title }}</p>
 </div>
+<div class="contact-desc">
+    <p class="news">{{ paymentdetails.body }}</p>
+</div>
+
+    {% endfor %}
+</div>
+
+
+<h1 class="news--header cont">Контакти</h1>
+<div class="container grid grid--2-cols">
+    {% for contacts in all_contacts %}
+    <div class="contact-desc">
+    <p class="news">{{ contacts.title }}</p>
+</div>
+<div class="contact-desc">
+    <p class="news">{{ contacts.body }}</p>
+</div>
+
+    {% endfor %}
+</div>
+
+
 {% endblock %}

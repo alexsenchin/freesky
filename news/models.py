@@ -63,3 +63,13 @@ class Donation(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class PaymentDetails(models.Model):
+    title = models.CharField(max_length=255)
+    body = models.TextField()
+
+class Contacts(models.Model):
+    title = models.CharField(max_length=255)
+    body = models.TextField()
+
