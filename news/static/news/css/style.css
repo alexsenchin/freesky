@@ -328,6 +328,18 @@ body {
     font-size: 1.8rem;
     color: #000;
 }
+.add--founds {
+    
+    font-size: 18px;
+    padding: 8px;
+    background-color: #04668C;
+    color: #fdf2e9;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.add--founds:hover {
+    background-color: #F2C063;
+}
 
 .border {
     height: 5rem;
